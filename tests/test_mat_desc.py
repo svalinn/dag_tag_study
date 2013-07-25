@@ -1,4 +1,3 @@
-from unittest import TestCase
 import nose 
 
 from nose.tools import assert_equal, assert_not_equal, assert_raises, raises, assert_in
