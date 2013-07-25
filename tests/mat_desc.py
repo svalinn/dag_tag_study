@@ -129,7 +129,7 @@ def main( arguments = None ):
 
     # Instatiate options parser
     parser = OptionParser\
-        (usage='%prog <flux mesh> [options]')
+        (usage='%prog <material description> [options]')
 
     parser.add_option('-w', dest='xsdir_Path', default=None,\
         help='Path to the XSDIR file, default=%default')
@@ -165,12 +165,12 @@ def main( arguments = None ):
     # Both .txt or .h5 material files are compatible
     for Mat in mat_list:
 
-    	Path= "/home/zeineddine/Mat_Libs/" + Mat + ".txt"
+    	Path= "Mat_Libs/" + Mat + ".txt"
 	try:
     	    mat = Material(Path)
 	except:
 	    try :
-	        Path= "/home/zeineddine/Mat_Libs/" + Mat + ".h5"
+	        Path= "Mat_Libs/" + Mat + ".h5"
 	        mat = Material()
 	        mat.from_hdf5(Path, "/mat", 1, protocol=0)
 	    except:

@@ -129,7 +129,7 @@ def main( arguments = None ):
 
     # Instatiate options parser
     parser = OptionParser\
-        (usage='%prog <flux mesh> [options]')
+        (usage='%prog <material description> [options]')
 
     parser.add_option('-w', dest='xsdir_Path', default=None,\
         help='Path to the XSDIR file, default=%default')
