@@ -1,6 +1,6 @@
 import nose 
 
-from nose.tools import assert_equal, assert_not_equal, assert_raises, raises, assert_in
+from nose.tools import assert_equal
 
 from pyne import nucname
 from mat_desc import get_tag_values, xsdir_get_iso_lib
